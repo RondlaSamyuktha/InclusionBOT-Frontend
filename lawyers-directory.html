@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Equality Lawyers Directory</title>
+    <link rel="stylesheet" href="lawyers-directory.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-gavel"></i>
+                <h1>Legal Experts Directory</h1>
+            </div>
+            <p class="subtitle">Connect with Gender Equality Law Specialists Worldwide</p>
+        </div>
+    </header>
+
+    <nav class="filter-nav">
+        <div class="filter-controls">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search lawyers by name, country, or expertise..." />
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterByRegion('all')">All Regions</button>
+                <button class="filter-btn" onclick="filterByRegion('americas')">Americas</button>
+                <button class="filter-btn" onclick="filterByRegion('europe')">Europe</button>
+                <button class="filter-btn" onclick="filterByRegion('asia')">Asia</button>
+                <button class="filter-btn" onclick="filterByRegion('africa')">Africa</button>
+                <button class="filter-btn" onclick="filterByRegion('oceania')">Oceania</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="lawyers-grid" id="lawyersGrid">
+            <!-- United States -->
+            <div class="lawyer-card" data-region="americas">
+                <div class="lawyer-header">
+                    <div class="lawyer-avatar">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=lawyer-usa&mouth=smile&eyes=default&eyebrows=default&backgroundColor=f8f9fa&clothing=blazerAndShirt&clothingColor=003366&hair=short&hairColor=2c3e50&skinColor=f5cfa3&top=shortRound&facialHairProbability=0" alt="Maria Rodriguez" class="avatar-image">
+                    </div>
+                    <div class="lawyer-basic-info">
+                        <h3>Maria Rodriguez</h3>
+                        <p class="country"><i class="fas fa-map-marker-alt"></i> United States</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lawyer-details">
+                    <div class="expertise">
+                        <h4><i class="fas fa-graduation-cap"></i> Expertise</h4>
+                        <p>Title IX compliance, workplace harassment, reproductive rights, equal pay litigation</p>
+                    </div>
+
+                    <div class="experience">
+                        <h4><i class="fas fa-briefcase"></i> Experience</h4>
+                        <p>15+ years in gender equality law. Founding partner at Rodriguez & Associates. Successfully litigated 200+ discrimination cases.</p>
+                    </div>
+
+                    <div class="achievements">
+                        <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+                        <ul>
+                            <li>Led class-action suit for equal pay at Fortune 500 company</li>
+                            <li>Authored amicus briefs in landmark Supreme Court cases</li>
+                            <li>Board member of National Women's Law Center</li>
+                        </ul>
+                    </div>
+
+                    <div class="languages">
+                        <h4><i class="fas fa-language"></i> Languages</h4>
+                        <span class="language-tag">English</span>
+                        <span class="language-tag">Spanish</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- United Kingdom -->
+            <div class="lawyer-card" data-region="europe">
+                <div class="lawyer-header">
+                    <div class="lawyer-avatar">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=lawyer-germany&mouth=default&eyes=default&eyebrows=default&backgroundColor=f8f9fa&clothing=blazerAndShirt&clothingColor=003366&hair=short&hairColor=2c3e50&skinColor=f5cfa3&top=shortRound&facialHairProbability=0" alt="Nomsa Nkosi" class="avatar-image">
+                    </div>
+                    <div class="lawyer-basic-info">
+                        <h3>Dr. Sarah Thompson</h3>
+                        <p class="country"><i class="fas fa-map-marker-alt"></i> United Kingdom</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lawyer-details">
+                    <div class="expertise">
+                        <h4><i class="fas fa-graduation-cap"></i> Expertise</h4>
+                        <p>Equality Act 2010, EU gender directives, domestic violence law, transgender rights</p>
+                    </div>
+
+                    <div class="experience">
+                        <h4><i class="fas fa-briefcase"></i> Experience</h4>
+                        <p>12+ years specializing in equality law. Former advisor to UK Government on gender policy. PhD in Gender Studies from Cambridge.</p>
+                    </div>
+
+                    <div class="achievements">
+                        <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+                        <ul>
+                            <li>Contributed to Equality Act amendments</li>
+                            <li>Published 3 books on gender law</li>
+                            <li>Recipient of Women in Law Excellence Award</li>
+                        </ul>
+                    </div>
+
+                    <div class="languages">
+                        <h4><i class="fas fa-language"></i> Languages</h4>
+                        <span class="language-tag">English</span>
+                        <span class="language-tag">French</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Canada -->
+            <div class="lawyer-card" data-region="americas">
+                <div class="lawyer-header">
+                    <div class="lawyer-avatar">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=lawyer-canada&mouth=smile&eyes=happy&eyebrows=default&backgroundColor=f8f9fa&clothing=blazerAndShirt&clothingColor=003366&hair=short&hairColor=2c3e50&skinColor=d2b48c&top=shortRound&facialHairProbability=0" alt="Dr. Amara Okafor" class="avatar-image">
+                    </div>
+                    <div class="lawyer-basic-info">
+                        <h3>Dr. Amara Okafor</h3>
+                        <p class="country"><i class="fas fa-map-marker-alt"></i> Canada</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lawyer-details">
+                    <div class="expertise">
+                        <h4><i class="fas fa-graduation-cap"></i> Expertise</h4>
+                        <p>Canadian Human Rights Act, pay equity legislation, indigenous women's rights, workplace discrimination</p>
+                    </div>
+
+                    <div class="experience">
+                        <h4><i class="fas fa-briefcase"></i> Experience</h4>
+                        <p>18+ years in human rights law. Former Chief Commissioner of Canadian Human Rights Commission. LLM from University of Toronto.</p>
+                    </div>
+
+                    <div class="achievements">
+                        <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+                        <ul>
+                            <li>Pioneered pay equity reforms in Ontario</li>
+                            <li>Led reconciliation initiatives for indigenous women</li>
+                            <li>International speaker on gender justice</li>
+                        </ul>
+                    </div>
+
+                    <div class="languages">
+                        <h4><i class="fas fa-language"></i> Languages</h4>
+                        <span class="language-tag">English</span>
+                        <span class="language-tag">French</span>
+                        <span class="language-tag">Yoruba</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- India -->
+            <div class="lawyer-card" data-region="asia">
+                <div class="lawyer-header">
+                    <div class="lawyer-avatar">
+                        <!-- More formal business attire -->
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=lawyer-usa&mouth=smile&eyes=default&eyebrows=default&backgroundColor=f8f9fa&clothing=blazerAndShirt&clothingColor=003366&hair=short&hairColor=2c3e50&skinColor=f5cfa3&top=shortRound&facialHairProbability=0" alt="Maria Rodriguez" class="avatar-image">
+                    </div>
+                    <div class="lawyer-basic-info">
+                        <h3>Priya Sharma</h3>
+                        <p class="country"><i class="fas fa-map-marker-alt"></i> India</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lawyer-details">
+                    <div class="expertise">
+                        <h4><i class="fas fa-graduation-cap"></i> Expertise</h4>
+                        <p>Protection of Women from Domestic Violence Act, sexual harassment law, dowry prohibition, workplace equality</p>
+                    </div>
+
+                    <div class="experience">
+                        <h4><i class="fas fa-briefcase"></i> Experience</h4>
+                        <p>14+ years advocating for women's rights. Founder of Women's Legal Aid Network. Successfully fought 150+ domestic violence cases.</p>
+                    </div>
+
+                    <div class="achievements">
+                        <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+                        <ul>
+                            <li>Led campaign for stronger anti-dowry laws</li>
+                            <li>Established 20+ legal aid clinics</li>
+                            <li>Supreme Court advocate for women's rights</li>
+                        </ul>
+                    </div>
+
+                    <div class="languages">
+                        <h4><i class="fas fa-language"></i> Languages</h4>
+                        <span class="language-tag">English</span>
+                        <span class="language-tag">Hindi</span>
+                        <span class="language-tag">Bengali</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Australia -->
+            <div class="lawyer-card" data-region="oceania">
+                <div class="lawyer-header">
+                    <div class="lawyer-avatar">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=lawyer-australia&mouth=default&eyes=default&eyebrows=default&backgroundColor=f8f9fa&clothing=blazerAndShirt&clothingColor=003366&hair=short&hairColor=2c3e50&skinColor=f5cfa3&top=shortRound&facialHairProbability=0" alt="Dr. Emily Chen" class="avatar-image">
+                    </div>
+                    <div class="lawyer-basic-info">
+                        <h3>Dr. Emily Chen</h3>
+                        <p class="country"><i class="fas fa-map-marker-alt"></i> Australia</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lawyer-details">
+                    <div class="expertise">
+                        <h4><i class="fas fa-graduation-cap"></i> Expertise</h4>
+                        <p>Sex Discrimination Act, workplace gender equality, family violence prevention, indigenous gender rights</p>
+                    </div>
+
+                    <div class="experience">
+                        <h4><i class="fas fa-briefcase"></i> Experience</h4>
+                        <p>16+ years in anti-discrimination law. Former Sex Discrimination Commissioner. Expert in workplace cultural change.</p>
+                    </div>
+
+                    <div class="achievements">
+                        <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+                        <ul>
+                            <li>Developed national workplace harassment guidelines</li>
+                            <li>Led royal commission into family violence</li>
+                            <li>Published research on gender bias in courts</li>
+                        </ul>
+                    </div>
+
+                    <div class="languages">
+                        <h4><i class="fas fa-language"></i> Languages</h4>
+                        <span class="language-tag">English</span>
+                        <span class="language-tag">Mandarin</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- South Africa -->
+            <div class="lawyer-card" data-region="africa">
+                <div class="lawyer-header">
+                    <div class="lawyer-avatar">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=lawyer-germany&mouth=default&eyes=default&eyebrows=default&backgroundColor=f8f9fa&clothing=blazerAndShirt&clothingColor=003366&hair=short&hairColor=2c3e50&skinColor=f5cfa3&top=shortRound&facialHairProbability=0" alt="Nomsa Nkosi" class="avatar-image">
+                    </div>
+                    <div class="lawyer-basic-info">
+                        <h3>Nomsa Nkosi</h3>
+                        <p class="country"><i class="fas fa-map-marker-alt"></i> South Africa</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lawyer-details">
+                    <div class="expertise">
+                        <h4><i class="fas fa-graduation-cap"></i> Expertise</h4>
+                        <p>Constitution gender equality clause, domestic violence law, traditional practices reform, economic empowerment</p>
+                    </div>
+
+                    <div class="experience">
+                        <h4><i class="fas fa-briefcase"></i> Experience</h4>
+                        <p>20+ years in constitutional law. Former Judge of Constitutional Court. Led gender equality initiatives post-apartheid.</p>
+                    </div>
+
+                    <div class="achievements">
+                        <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+                        <ul>
+                            <li>Pioneered gender equality in South African Constitution</li>
+                            <li>Chaired Truth and Reconciliation gender hearings</li>
+                            <li>Established women's economic empowerment fund</li>
+                        </ul>
+                    </div>
+
+                    <div class="languages">
+                        <h4><i class="fas fa-language"></i> Languages</h4>
+                        <span class="language-tag">English</span>
+                        <span class="language-tag">Zulu</span>
+                        <span class="language-tag">Xhosa</span>
+                        <span class="language-tag">Afrikaans</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Germany -->
+            <div class="lawyer-card" data-region="europe">
+                <div class="lawyer-header">
+                    <div class="lawyer-avatar">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=lawyer-germany&mouth=default&eyes=default&eyebrows=default&backgroundColor=f8f9fa&clothing=blazerAndShirt&clothingColor=003366&hair=short&hairColor=2c3e50&skinColor=f5cfa3&top=shortRound&facialHairProbability=0" alt="Dr. Anna Müller" class="avatar-image">
+                    </div>
+                    <div class="lawyer-basic-info">
+                        <h3>Dr. Anna Müller</h3>
+                        <p class="country"><i class="fas fa-map-marker-alt"></i> Germany</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lawyer-details">
+                    <div class="expertise">
+                        <h4><i class="fas fa-graduation-cap"></i> Expertise</h4>
+                        <p>EU Gender Equality Directives, General Equal Treatment Act, parental leave laws, anti-discrimination measures</p>
+                    </div>
+
+                    <div class="experience">
+                        <h4><i class="fas fa-briefcase"></i> Experience</h4>
+                        <p>13+ years in EU equality law. Specialist in cross-border discrimination cases. Former EU Commission advisor.</p>
+                    </div>
+
+                    <div class="achievements">
+                        <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+                        <ul>
+                            <li>Led implementation of EU maternity leave directive</li>
+                            <li>Established Germany's first gender law clinic</li>
+                            <li>Authored EU gender equality policy papers</li>
+                        </ul>
+                    </div>
+
+                    <div class="languages">
+                        <h4><i class="fas fa-language"></i> Languages</h4>
+                        <span class="language-tag">German</span>
+                        <span class="language-tag">English</span>
+                        <span class="language-tag">French</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brazil -->
+            <div class="lawyer-card" data-region="americas">
+                <div class="lawyer-header">
+                    <div class="lawyer-avatar">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=lawyer-australia&mouth=default&eyes=default&eyebrows=default&backgroundColor=f8f9fa&clothing=blazerAndShirt&clothingColor=003366&hair=short&hairColor=2c3e50&skinColor=f5cfa3&top=shortRound&facialHairProbability=0" alt="Carla Santos" class="avatar-image">
+                    </div>
+                    <div class="lawyer-basic-info">
+                        <h3>Carla Santos</h3>
+                        <p class="country"><i class="fas fa-map-marker-alt"></i> Brazil</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lawyer-details">
+                    <div class="expertise">
+                        <h4><i class="fas fa-graduation-cap"></i> Expertise</h4>
+                        <p>Maria da Penha Law, workplace harassment prevention, reproductive rights, LGBTQ+ discrimination</p>
+                    </div>
+
+                    <div class="experience">
+                        <h4><i class="fas fa-briefcase"></i> Experience</h4>
+                        <p>17+ years in gender violence law. Founder of Brazil's largest domestic violence legal network. UN Women consultant.</p>
+                    </div>
+
+                    <div class="achievements">
+                        <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+                        <ul>
+                            <li>Strengthened Maria da Penha Law implementation</li>
+                            <li>Established 50+ women's shelters</li>
+                            <li>Led national campaign against femicide</li>
+                        </ul>
+                    </div>
+
+                    <div class="languages">
+                        <h4><i class="fas fa-language"></i> Languages</h4>
+                        <span class="language-tag">Portuguese</span>
+                        <span class="language-tag">English</span>
+                        <span class="language-tag">Spanish</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Japan -->
+            <div class="lawyer-card" data-region="asia">
+                <div class="lawyer-header">
+                    <div class="lawyer-avatar">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=lawyer-canada&mouth=smile&eyes=happy&eyebrows=default&backgroundColor=f8f9fa&clothing=blazerAndShirt&clothingColor=003366&hair=short&hairColor=2c3e50&skinColor=d2b48c&top=shortRound&facialHairProbability=0" alt="Dr. Yuki Tanaka" class="avatar-image">
+                    </div>
+                    <div class="lawyer-basic-info">
+                        <h3>Dr. Yuki Tanaka</h3>
+                        <p class="country"><i class="fas fa-map-marker-alt"></i> Japan</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lawyer-details">
+                    <div class="expertise">
+                        <h4><i class="fas fa-graduation-cap"></i> Expertise</h4>
+                        <p>Equal Employment Opportunity Law, sexual harassment prevention, maternity leave rights, gender quota legislation</p>
+                    </div>
+
+                    <div class="experience">
+                        <h4><i class="fas fa-briefcase"></i> Experience</h4>
+                        <p>15+ years in corporate gender equality law. Led Japan's first gender diversity board initiative. Tokyo University Law Professor.</p>
+                    </div>
+
+                    <div class="achievements">
+                        <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+                        <ul>
+                            <li>Pioneered corporate gender quota implementation</li>
+                            <li>Reformed Japan's maternity harassment laws</li>
+                            <li>Established Asia-Pacific gender law research center</li>
+                        </ul>
+                    </div>
+
+                    <div class="languages">
+                        <h4><i class="fas fa-language"></i> Languages</h4>
+                        <span class="language-tag">Japanese</span>
+                        <span class="language-tag">English</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Kenya -->
+            <div class="lawyer-card" data-region="africa">
+                <div class="lawyer-header">
+                    <div class="lawyer-avatar">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=lawyer-usa&mouth=smile&eyes=default&eyebrows=default&backgroundColor=f8f9fa&clothing=blazerAndShirt&clothingColor=003366&hair=short&hairColor=2c3e50&skinColor=f5cfa3&top=shortRound&facialHairProbability=0" alt="Grace Wanjiku" class="avatar-image">
+                    </div>
+                    <div class="lawyer-basic-info">
+                        <h3>Grace Wanjiku</h3>
+                        <p class="country"><i class="fas fa-map-marker-alt"></i> Kenya</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lawyer-details">
+                    <div class="expertise">
+                        <h4><i class="fas fa-graduation-cap"></i> Expertise</h4>
+                        <p>Protection Against Domestic Violence Act, sexual offenses law, female genital mutilation prohibition, succession rights</p>
+                    </div>
+
+                    <div class="experience">
+                        <h4><i class="fas fa-briefcase"></i> Experience</h4>
+                        <p>19+ years in women's rights advocacy. Director of East African Women's Rights Network. Successfully challenged discriminatory laws.</p>
+                    </div>
+
+                    <div class="achievements">
+                        <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+                        <ul>
+                            <li>Led constitutional challenge against discriminatory succession laws</li>
+                            <li>Established legal aid for rural women</li>
+                            <li>African Union gender policy advisor</li>
+                        </ul>
+                    </div>
+
+                    <div class="languages">
+                        <h4><i class="fas fa-language"></i> Languages</h4>
+                        <span class="language-tag">English</span>
+                        <span class="language-tag">Swahili</span>
+                        <span class="language-tag">Kikuyu</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-users"></i> About Our Directory</h3>
+                <p>Connect with leading gender equality law experts from around the world. Our directory features verified professionals with proven track records in advancing gender justice and women's rights.</p>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-globe"></i> Global Network</h3>
+                <p>Our lawyers serve clients across borders and specialize in international gender law. Whether you need local or cross-border legal assistance, find the right expert for your needs.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Gender Equality Legal Directory. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="lawyers-directory.js"></script>
+</body>
+</html>
