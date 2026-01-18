@@ -77,19 +77,22 @@ userInput.addEventListener('keydown', (e) => {
 });
 
 // Info button handlers
+// Info button handlers
 function showInfo(type) {
-    let message = '';
     switch(type) {
         case 'lawyers':
-            message = 'I can help you connect with a lawyer for consultation. Would you like to proceed with a lawyer consultation?';
+            // Keep the original behavior for lawyers
+            const message = 'I can help you connect with a lawyer for consultation. Would you like to proceed with a lawyer consultation?';
+            userInput.value = message;
+            sendMessage();
             break;
+
         case 'rights':
-            message = 'I can provide information about gender equality rights. What specific rights would you like to know about?';
+            // Open the local rights page in a new tab
+            window.open('gender-equality-laws.html', '_blank');  // Adjust path if rights.html is in a subfolder
             break;
-    }
-    if (message) {
-        userInput.value = message;
-        sendMessage();
     }
 }
+
+
 
