@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Equality Awareness & Safety Chatbot</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>    
+    <h1 align="center"><b>InclusionBOT</b></h1>
+    <h2 align="center">Gender Equality Awareness & Safety Chatbot</h2>
+    <br>    
+    <div class="container">
+        <!-- Left Half: Chat Interface -->
+        <div class="chat-section">
+                <div class="chat-header">
+                    <div class="bot-avatar">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=confident-lawyer-female&mouth=smile&eyes=default&eyebrows=default&backgroundColor=f8f9fa&clothing=blazerAndSweater&clothingColor=003366&hair=longNotTooLong&hairColor=8b4513&skinColor=f5cfa3&top=shortRound&facialHairProbability=0" alt="IBOT Avatar" class="avatar-image">
+                    </div>
+                    <div class="bot-info">
+                        <h2>IBOT - Awareness and Support Chat</h2>
+                        <p class="bot-status">Online • Ready to help</p>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <p>Hello! I'm here to help you with Gender Equality awareness and safety. How can I assist you today?</p>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" id="userInput" placeholder="Type your message here..." />
+                    <button id="sendButton">Send</button>
+                </div>
+            </div>
+
+        <!-- Right Half: Information Panel -->
+        <div class="info-section">
+            <div class="info-content">
+                <div class="info-block">
+                    <h2>What is Gender Equality?</h2>
+                    <p>Gender equality refers to the equal rights, responsibilities, and opportunities of all genders. It means that all individuals, regardless of their gender identity, should have equal access to resources, opportunities, and decision-making power.</p>
+                </div>
+
+                <div class="info-block">
+                    <h2>Why is it Important?</h2>
+                    <p>Gender equality is fundamental to human rights and social justice. It promotes economic growth, reduces poverty, improves health outcomes, and creates more peaceful and inclusive societies. When everyone has equal opportunities, entire communities benefit.</p>
+                </div>
+
+                <div class="info-block">
+                    <h2>How Laws Protect It</h2>
+                    <p>Laws promote gender equality by banning discrimination, ensuring equal pay, preventing harassment and violence, and guaranteeing equal access to education, jobs, and public services. They also create accountability and provide remedies for violations.</p>
+                </div>
+
+                <div class="button-group">
+                    <div align="right"><button class="info-button" onclick="showInfo('lawyers')" >Consult a Lawyer</button></div>
+                    <div align="Left"><button class="info-button" onclick="showInfo('rights')" >Gender Equality Rights</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
