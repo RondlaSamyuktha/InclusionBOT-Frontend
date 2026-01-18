@@ -12,28 +12,6 @@
     <br>    
     <div class="container">
         <!-- Left Half: Chat Interface -->
-        <div class="chat-section">
-                <div class="chat-header">
-                    <div class="bot-avatar">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=confident-lawyer-female&mouth=smile&eyes=default&eyebrows=default&backgroundColor=f8f9fa&clothing=blazerAndSweater&clothingColor=003366&hair=longNotTooLong&hairColor=8b4513&skinColor=f5cfa3&top=shortRound&facialHairProbability=0" alt="IBOT Avatar" class="avatar-image">
-                    </div>
-                    <div class="bot-info">
-                        <h2>IBOT - Awareness and Support Chat</h2>
-                        <p class="bot-status">Online • Ready to help</p>
-                    </div>
-                </div>
-                <div class="chat-messages" id="chatMessages">
-                    <div class="message bot-message">
-                        <p>Hello! I'm here to help you with Gender Equality awareness and safety. How can I assist you today?</p>
-                    </div>
-                </div>
-                <div class="chat-input-container">
-                    <input type="text" id="userInput" placeholder="Type your message here..." />
-                    <button id="sendButton">Send</button>
-                </div>
-            </div>
-
-        <!-- Right Half: Information Panel -->
         <div class="info-section">
             <div class="info-content">
                 <div class="info-block">
@@ -55,10 +33,33 @@
                     <div align="right"><button class="info-button" onclick="showInfo('lawyers')" >Consult a Lawyer</button></div>
                     <div align="Left"><button class="info-button" onclick="showInfo('rights')" >Gender Equality Rights</button></div>
                 </div>
+        </div>
+        <!-- Right Half: Information Panel -->
+        <div class="chat-section">
+                <div class="chat-header">
+                    <div class="bot-avatar">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=confident-lawyer-female&mouth=smile&eyes=default&eyebrows=default&backgroundColor=f8f9fa&clothing=blazerAndSweater&clothingColor=003366&hair=longNotTooLong&hairColor=8b4513&skinColor=f5cfa3&top=shortRound&facialHairProbability=0" alt="IBOT Avatar" class="avatar-image">
+                    </div>
+                    <div class="bot-info">
+                        <h2>IBOT - Awareness and Support Chat</h2>
+                        <p class="bot-status">Online • Ready to help</p>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <p>Hello! I'm here to help you with Gender Equality awareness and safety. How can I assist you today?</p>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" id="userInput" placeholder="Type your message here..." />
+                    <button id="sendButton">Send</button>
+                </div>
             </div>
+        
         </div>
     </div>
 
     <script src="/script.js"></script>
 </body>
 </html>
+
