@@ -81,10 +81,8 @@ userInput.addEventListener('keydown', (e) => {
 function showInfo(type) {
     switch(type) {
         case 'lawyers':
-            // Keep the original behavior for lawyers
-            const message = 'I can help you connect with a lawyer for consultation. Would you like to proceed with a lawyer consultation?';
-            userInput.value = message;
-            sendMessage();
+            // Open lawyers page in a new tab
+            window.open('lawyers-directory.html', '_blank');
             break;
 
         case 'rights':
@@ -93,6 +91,7 @@ function showInfo(type) {
             break;
     }
 }
+
 
 
 
