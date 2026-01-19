@@ -1,9 +1,10 @@
-fetch('https://inclusionbot.onrender.com/health')
+fetch('https://inclusionbot-backend.onrender.com/health')
   .then(res => console.log('Backend healthy'))
   .catch(() => console.warn('Backend not reachable'));
 
 // API Configuration - Pointing to Render backend
-const API_URL = 'https://inclusionbot.onrender.com/chat';
+const API_URL = 'https://inclusionbot-backend.onrender.com/chat';
+
 
 const chatMessages = document.getElementById('chatMessages');
 const userInput = document.getElementById('userInput');
@@ -91,6 +92,7 @@ function showInfo(type) {
             break;
     }
 }
+
 
 
 
